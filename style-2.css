@@ -60,13 +60,17 @@
 }
 
 .homie, .searchy, .liby, .Playlist2{
+    margin-top: 10px;
+
   color: rgb(130, 125, 125);
-  font-size: 14px;
+  font-size: 17px;
   font-family: "Circular Std Medium";
   font-weight: 700px;
   margin-left: 20px;
 }
-
+.homie{
+    text-decoration: none;
+}
 
 .left-bottom-content{
   margin-top: 50px;
@@ -102,26 +106,10 @@
   height: 230px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Right Side */
 .right-div {
   flex: 4;
+  
   height: 90vh;
   background-color: green;
   display: flex;
@@ -164,6 +152,7 @@
 
 .pop {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .pop-text {
@@ -358,5 +347,59 @@ footer{
 .bar2{
   width: 97%;
   margin-left: 10px;
+}
+
+@media screen and (max-width:715px) {
+  .pop{
+    display: flex;
+    flex-direction: column;
+  }
+  .pop-img{
+    margin-top: -17px;
+  }
+  .pop-text{
+    margin-top: -17px;
+    margin-left: 10px;
+  }
+  .name{
+    font-size: 40px;
+    margin-top: -45px;
+  }
+  .lorem{
+    margin-top: -30px;
+  }
+  .duration{
+    margin-top: -10px;
+  }
+  .imgs{
+    margin-top: -95px;
+  }
+}
+
+@media screen and (max-width:590px) {
+  .footer-div2{
+    scale: 0.8;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -70px;
+  }
+  .mid2-Top{
+    margin-left: 120px;
+  }
+  .bar2{
+    width: 70%;
+    margin-left: 30px;
+  }
+
+  .start-time{
+    margin-left: 60px;
+  }
+
+  .end-time{
+    margin-right: 50px;
+  }
+  .footer-album{
+    scale: 0.8;
+  }
 }
 
